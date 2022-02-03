@@ -8,6 +8,7 @@ RUN sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/
 RUN apt-get update
 RUN apt-get install dart
 RUN curl -L get.web3j.io | sh && . ~/.web3j/source.sh
+RUN apt-get install docker-ce docker-ce-cli containerd.io
 
 ENV PATH="/usr/lib/dart/bin:${PATH}"
 
